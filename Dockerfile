@@ -46,4 +46,4 @@ ENV JAVA_OPTS="-Dcom.sun.management.jmxremote \
                -Dcom.sun.management.jmxremote.ssl=false \
                -Djava.rmi.server.hostname=0.0.0.0"
 
-ENTRYPOINT exec java $JAVA_OPTS -javaagent:"jmx_prometheus_javaagent-0.20.0.jar=8084:jmx_config.yaml" -jar deposit-account-management-service-boot.jar
+ENTRYPOINT exec java $JAVA_OPTS -javaagent:"jmx_prometheus_javaagent-0.20.0.jar=8087:jmx_config.yaml" -jar deposit-account-management-service-boot.jar
